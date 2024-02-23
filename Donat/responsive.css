@@ -1,66 +1,125 @@
-@media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
+@media only screen and (max-width: 912px) {
+  header .donat {
+    width: 72px;
+  }
 
-    header .donat {
-        width: 72px;
-    }
+  header .atlantic {
+    width: 35px;
+  }
 
-    header .atlantic {
-        width: 35px;
-    }
+  section:not(#composition) {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    section {
-        max-width: 90%;
-        height: max-content !important;
-        flex-direction: column;
-        justify-content: center;
-        padding: 16px 0;
-    }
+  section:not(#composition) {
+    max-width: 90%;
+  }
 
-    div.section-right img {
-        margin-top: 45px;
-    }
+  section:not(#top) {
+    margin: 46px 0;
+  }
 
-    h2 {
-        font-size: 2.3rem;
-        line-height: 1.4;
-    }
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
-    p {
-        margin-bottom: 0;
-    }
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
 
-    /* Section COMPOSITION */
-        #composition .background {
-            max-width: none;
-        }
+  .section-right.image {
+    order: 1;
+  }
 
-                #composition .background.front {
-                    bottom: -225px
-                }
-    .composition-section-content {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 12px;
-    }
+  .section-left.text {
+    order: 2;
+  }
 
-    .composition-section-content .section-left span {
-        width: 34%;
-        text-align: center;
-    }
+  section#top {
+    height: calc(100vh - 44px);
+  }
 
-    .composition-section-content .section-left span p {
-        font-size: 12px;
-    }
+  #about .section-right img {
+    width: 65vw;
+  }
 
-    .composition-section-content .section-left img {
-        width: 60px;
-        padding: 8px;
-    }
+  /* Section COMPOSITION */
+  #composition {
+    width: 100%;
+    overflow-x: clip;
+  }
 
-    .composition-section-content .section-right {
-        margin-left: 0;
-    }
+  .composition-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .composition-section-content .section-left span {
+    width: 34%;
+    text-align: center;
+  }
+
+  .composition-section-content .section-left span p {
+    font-size: 12px;
+  }
+
+  .composition-section-content .section-left img {
+    width: 60px;
+    padding: 8px;
+  }
+
+  .composition-section-content .section-right {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  /* Section MINERALS */
+  #minerals {
+    background: none;
+  }
+
+  /* Section DOWNLOAD */
+  #download .section-left {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  #download .section-left .iphone {
+    width: 30vw;
+    position: unset !important;
+  }
+  #download .glass,
+  #download .info-bubble.download,
+  #download .info-bubble.cart,
+  #download .info-bubble.bell {
+    display: none;
+  }
+
+  #download .icon-container {
+    justify-content: space-around;
+  }
+
+  #download .icon-container .icon {
+    margin: 20px 0 0 0;
+  }
+
+  /*  FOOTER */
+  footer {
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  footer .section-right {
+    order: 1;
+    margin-top: 12px;
+  }
+
+  footer .section-left {
+    order: 2;
+    margin-top: 12px;
+  }
 }
