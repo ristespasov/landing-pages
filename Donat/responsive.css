@@ -17,8 +17,8 @@
     max-width: 90%;
   }
 
-  section:not(#top) {
-    margin: 46px 0;
+  section:not(#top, #composition) {
+    padding: 46px 0;
   }
 
   h2 {
