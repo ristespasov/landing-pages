@@ -1,0 +1,79 @@
+@media only screen and (max-width: 912px) {
+  /* Text style */
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .section-left,
+  .section-right {
+    width: 100%;
+  }
+
+  /* Section TOP */
+  .basketballs {
+    display: none;
+  }
+
+  /* Section ABOUT */
+  #about .court {
+    justify-content: center;
+  }
+
+  #about .quote {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .text-box {
+    width: 85%;
+    margin-right: 0;
+  }
+
+  /* Section PLANS */
+  .plans-container {
+    flex-direction: column;
+  }
+
+  .plan-competitor,
+  .plan-all-star {
+    width: calc(100% - 10vw);
+  }
+
+  /* Section ENROLL */
+  .hoop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  /* Text style */
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* Button */
+  a.button {
+    letter-spacing: 0;
+  }
+
+  /* Section ABOUT */
+  #about .court {
+    background-image: none;
+  }
+
+  #about .text-box {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  footer {
+    width: calc(100% - 4vw);
+    max-width: calc(1332px - 4vw);
+    font-size: 0.8rem;
+    padding: 5vw 2vw;
+  }
+}

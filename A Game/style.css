@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  background-color: #333333;
+  margin: 0;
+}
+
+/* Border style */
+.border-orange {
+  border-color: #fa6400;
+}
+
+.border-white {
+  border-color: #ffffff;
+}
+
+.border-dark {
+  border-color: #000;
+}
+
+/* Background style */
+.bg-orange {
+  background-color: #fa6400;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.bg-image {
+  background: center / cover no-repeat none;
+}
+
+/* Text style */
+h1 {
+  font-size: 5rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p,
+ul {
+  font-size: 1.25rem;
+  letter-spacing: 1;
+  line-height: 1.75;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 5vw;
+}
+
+.text-orange {
+  color: #fa6400;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #000;
+}
+
+/* Button */
+a.button,
+button {
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1;
+  padding: 14px 24px;
+  margin-top: 5vh;
+  transition: 0.5s;
+}
+
+a.button:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+section {
+  max-width: 1332px;
+  display: flex;
+}
+
+.section-left,
+.section-right {
+  width: 50%;
+}
+
+.section-left.text {
+  width: calc(50% - 6vw);
+}
+
+/* Section TOP */
+.basketballs {
+  background-image: url('assets/images/basketballs.jpg');
+}
+
+/* Section ABOUT */
+#about {
+  flex-direction: column;
+}
+
+#about .section-left,
+#about .section-right {
+  width: 100%;
+}
+
+#about .court {
+  min-height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url('assets/images/court.jpg');
+}
+
+#about .text-box {
+  width: 450px;
+  margin-right: 5vh;
+}
+
+#about .quote {
+  display: flex;
+  flex-direction: row;
+}
+
+#about .quote span {
+  align-items: center;
+  text-align: center;
+}
+
+#about .quote span p:first-of-type {
+  font-size: 1.5rem;
+}
+
+#about .quote span p:last-of-type {
+  font-size: 1rem;
+}
+
+/* Section PLANS */
+.plans-content-wrapper {
+  padding: 5vw 3vw;
+}
+
+.plans-container {
+  display: flex;
+  margin-top: 5vw;
+}
+
+.plan-competitor,
+.plan-all-star {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3vw;
+}
+
+.plan-competitor a.button:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.plan-all-star a.button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+/* Section ENROLL */
+.hoop {
+  background-image: url('assets/images/hoop.jpg');
+}
+
+/* FOOTER */
+footer {
+  width: calc(100% - 6vw);
+  max-width: calc(1332px - 6vw);
+  display: flex;
+  justify-content: center;
+  padding: 3vw;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

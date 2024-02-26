@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/icons/fav.svg" />
+    <!-- Title -->
+    <title>A GAME - Keep your court dreams alive.</title>
+  </head>
+
+  <body>
+    <!-- TOP -->
+    <section id="top">
+      <div class="section-left bg-orange text-white">
+        <div class="text">
+          <h1>
+            Keep your <span class="text-dark"><br />court<br />dreams</span><br />alive.
+          </h1>
+          <p>
+            Personalized basketball coaching for athletes who want to take their court dreams to the next level. See
+            what
+            <strong>A GAME</strong> training can bring to your game.
+          </p>
+          <a class="button border-dark bg-dark text-white" href="#plans">Up my game</a>
+        </div>
+      </div>
+      <div class="section-right bg-image basketballs"></div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-right bg-image court">
+        <div class="bg-white text text-white text-box">
+          <h2 class="text-dark">Weekly basketball coaching program tailored to your game.</h2>
+          <p class="text-dark">
+            <strong class="text-orange">A GAME</strong> Training has a roster of coaches ready to help your basketball
+            skills and development. From ball handling to mental stamina, our coaching plans are made to help you reach
+            your court dreams from the varsity squad to D1 ball and beyond.
+          </p>
+        </div>
+      </div>
+      <div class="section-left bg-orange">
+        <div class="quote text">
+          <img class="quotation-mark" src="assets/icons/quotation-mark-left.svg" alt="Quotation mark" />
+          <span class="text text-white">
+            <p>
+              Getting monthly coaching with drills I needed to work on kept me motivated and accountable. I made the
+              varsity roster this season, and I definitely don’t think I could’ve done that without the skills I learned
+              from my <strong>A GAME</strong> coach every month.
+            </p>
+            <p>- Vanessa, high school basketball player -</p>
+          </span>
+          <img class="quotation-mark" src="assets/icons/quotation-mark-right.svg" alt="Quotation mark" />
+        </div>
+      </div>
+    </section>
+    <!-- PLANS -->
+    <section id="plans">
+      <div class="plans-content-wrapper bg-dark">
+        <div class="text-white">
+          <h1>A GAME coaching plans</h1>
+          <p>
+            Subscribing to a coaching plan means continued growth and gains to help you hit your basketball goals. With
+            decades of playing and coaching experience across the <strong>A GAME</strong> team, you’ll be paired with a
+            coach who takes the time to understand you, your game, and your goals.
+          </p>
+          <p>See which of our monthly plans is the best fit for your basketball goals.</p>
+        </div>
+        <div class="plans-container">
+          <div class="plan-competitor bg-white text text-dark">
+            <h2>The Competitor</h2>
+            <p>
+              This is for the player who’s just getting started out at any level. Playing for the first time? Starting
+              up in high school? Let us know, and you’ll receive new drills to work on every month for any level of
+              competition.
+            </p>
+            <p>Every month, your <strong class="text-orange">A GAME</strong> coach will give you:</p>
+            <ul>
+              <li>Drills to focus on</li>
+              <li>Off-court exercise plan</li>
+              <li>Tailored nutrition plan</li>
+              <li>Monthly video assessment</li>
+              <li>Monthly one-on-one check-in</li>
+            </ul>
+            <span class="plan-price">$79/month</span>
+            <a class="button border-dark bg-white text-dark" onclick="openModal('Competitor', '$79/month')"
+              >I'm here to compete</a
+            >
+          </div>
+          <div class="plan-all-star bg-orange text text-white">
+            <h2>The All Star</h2>
+            <p>
+              This plan is for the athlete who has the foundations covered but knows it's time to fine-tune their game.
+            </p>
+            <p>Every month, your <strong>A GAME</strong> coach will give you:</p>
+            <ul>
+              <li>Fine motor skills to focus on</li>
+              <li>Game strategy development</li>
+              <li>Off-court exercise plan</li>
+              <li>Tailored nutrition plan</li>
+              <li>Weekly video assessment</li>
+              <li>Weekly one-on-one check-ins</li>
+              <li>Goal planning assistance</li>
+            </ul>
+            <span class="plan-price">$249/month</span>
+            <a class="button border-white bg-orange text-white" onclick="openModal('All Star', '$249/month')"
+              >Let's go, All Star!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SIGN UP -->
+    <section id="enroll">
+      <div class="section-left bg-image hoop"></div>
+      <div class="section-right bg-white text-dark">
+        <div class="text">
+          <h1>
+            Hit your A game with
+            <br /><strong class="text-orange">A GAME</strong><br />
+            coaching
+          </h1>
+          <p class="text-dark">
+            What are you waiting for? Reach your full potential on and off the court with a monthly basketball coaching
+            plan.
+          </p>
+          <a class="button border-dark bg-dark text-white" href="#plans">Up my game</a>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white">&copy; A GAME | Developed by Riste Spasov</footer>
+
+    <!-- PLANS MODAL -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modal-header"></h2>
+        <p>Email: <input type="email" id="emailInput" /></p>
+        <p>Card Number: <input type="text" id="cardInput" placeholder="**** **** **** ****" /></p>
+        <p>Expiry Date: <input type="text" id="expiryInput" placeholder="MM/YY" /></p>
+        <p>CSV: <input type="text" id="csvInput" placeholder="***" /></p>
+        <button id="payBtn" class="button bg-dark text-white" disabled onclick="pay()">Pay</button>
+      </div>
+    </div>
+  </body>
+  <!-- Script -->
+  <script src="script.js"></script>
+</html>
